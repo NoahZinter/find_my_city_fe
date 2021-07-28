@@ -1,0 +1,19 @@
+@import "bootstrap";
+
+
+.welcome-page-image{
+  display: block;
+  margin-top: 15%;
+  width: 100%;
+}
+
+.search-bar-z-index{
+  z-index: 2;
+  margin-top: 50%
+}
+
+body{
+  background-image: url('https://cdn-bmalj.nitrocdn.com/uirOOtSrYrqqUksKHkiSCjZGZlPeXsmk/assets/static/source/rev-0404f4f/images/best-city-skylines-hong-kong.jpg');
+  background-repeat: repeat-x;
+  background-position: center;
+}
