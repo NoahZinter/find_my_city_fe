@@ -1,23 +1,22 @@
 @import "bootstrap";
 
-
 .welcome-page-image{
-  position:fixed;
-  bottom:0px;
   width: 100%;
-  // position: fixed;
+  bottom: 0%;
+  position: fixed;
+  z-index:-2;
+  opacity: 0.75
 }
 
 .search-bar{
-  margin-top: 15%;
+  margin-top: 5%;
   z-index: 2;
   position: relative;
 }
 
-
 .company-name{
   text-align: center;
   margin-top: 10%;
-  font-family: fantasy;
-  font-size: 50px;
+  font-family: sans-serif;
+  font-size: 60px;
 }
