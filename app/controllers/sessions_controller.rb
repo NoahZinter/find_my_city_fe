@@ -1,9 +1,5 @@
 class SessionsController < ApplicationController
 
-  def new
-
-  end
-
   def create
     user = User.find_or_create_by(email: user_attributes[:email])
     user.update(user_attributes)
