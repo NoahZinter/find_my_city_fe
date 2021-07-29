@@ -1,5 +1,5 @@
 class CityDetails
-  attr_reader :name, :score_out_of_10
+  attr_reader :name, :score
 
   def initialize(data)
     @name = data[:name]
