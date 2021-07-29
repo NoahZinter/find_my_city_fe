@@ -7,8 +7,6 @@ RSpec.describe 'cities show' do
     id = cities.first.id
     city = cities.first
     visit "/cities/#{id}"
-    save_and_open_page
-    binding.pry
     # expect(page).to have_content(city.name)
     # expect(page).to have_content(city.image)
     # expect(page).to have_content(city.name)
