@@ -20,7 +20,7 @@ RSpec.describe 'cities show' do
     id = create(:city).id
     visit "/cities/#{id}"
     expect(page).to have_content("Education")
-    expect(page).to have_content("Saftey")
+    expect(page).to have_content("Safety")
     expect(page).to have_content("Economy")
     expect(page).to have_content("Cost of Living")
     expect(page).to have_content("Healthcare")
