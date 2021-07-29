@@ -10,7 +10,7 @@ RSpec.describe 'CityDetailsService' do
     expect(result).to have_key(:categories)
 
     first = result[:categories][0]
-  #   # binding.pry
+
     expect(first).to have_key :name
     expect(first[:name]).to be_a String
     expect(first[:name]).to eq "Housing"
