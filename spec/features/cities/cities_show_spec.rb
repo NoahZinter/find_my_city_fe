@@ -15,4 +15,14 @@ RSpec.describe 'cities show' do
     # expect(page).to have_content(city.categories)
     # expect(page).to have_content(city.summary)
   end
+
+  it 'shows citys categories' do
+    id = create(:city).id
+    visit "/cities/#{id}"
+    expect(page).to have_content("Education")
+    expect(page).to have_content("Saftey")
+    expect(page).to have_content("Economy")
+    expect(page).to have_content("Cost of Living")
+    expect(page).to have_content("Healthcare")
+  end
 end

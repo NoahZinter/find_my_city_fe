@@ -3,19 +3,35 @@
 
 <div class="container">
   <div class="row justify-content-start">
-    <div class="col-4">
+    <div class="col-6">
       <h1><%= @city.name %></h1>
-      <img src= "<%= @city.picture %>" alt="">
+      <img src= "<%= @city.picture %>" alt="" style="max-width: 80%">
       <p><%= @city.summary %></p>
-      <h4>Overall rating</h4>
       <div style="display: flex">
-        <h5><%= @city.total_score %></h5>
-        <button type="button" class="btn btn-primary">Add to Favorites</button>
+      <h4>Overall rating</h4>
+        <div class="star-ratings-css">
+          <div class="star-ratings-css-top" style="width: <%="#{@city.total_score * 10}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        </div>
       </div>
+      <button type="button" class="btn btn-primary">Add to Favorites</button>
     </div>
     <div class="col-4">
-      
-
+      <% if @city_details.present? %>
+        <% @city_details.each do |detail| %>
+          <div style="display: flex">
+            <h5 style="margin-right: auto"><%= detail[:name] %></h5>
+            <% percentage = detail[:score_out_of_10] * 10 %>
+            <div style="margin-left: auto">
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: <%="#{percentage}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+            </div>
+          </div>
+          <br>
+        <% end %>
+      <% end %>
     </div>
   </div>
 </div>
@@ -23,22 +39,3 @@
 
 
 
-
-
-
-<div class="star-rating">
-      <input type="radio" name="stars" id="star-a" value="5"/>
-      <label for="star-a"></label>
-
-      <input type="radio" name="stars" id="star-b" value="4"/>
-      <label for="star-b"></label>
-
-      <input type="radio" name="stars" id="star-c" value="3"/>
-      <label for="star-c"></label>
-
-      <input type="radio" name="stars" id="star-d" value="2"/>
-      <label for="star-d"></label>
-
-      <input type="radio" name="stars" id="star-e" value="1"/>
-      <label for="star-e"></label>
-</div>
