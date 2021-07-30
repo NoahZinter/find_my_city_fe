@@ -1,13 +1,27 @@
-  <!-- Bootstrap CSS -->
+  <%
+=begin%>
+ <!-- Bootstrap CSS -->
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
 <!-- Font Awesome CSS -->
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
-        Login
-      </button>
+      <div class='row align-items-start'>
+        <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+          Login
+        </button>
+      </div>
+            <h3>Your next chapter awaits</h3>
+      <div class="search-bar">
+        <div class="container" class="">
+          <form class="d-flex">
+          
+            <input class="form-control me-2" type="search" placeholder="Search by city name" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+  </div>
     </div>
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -32,20 +46,11 @@
         </div>
       </div>
     </div>
-  </nav>
+  </nav> 
+<%
+=end%>
 
   <h1 class="company-name">Find My City</h1>
-
-  <div class="search-bar">
-    <div class="container" class="">
-      <h3>Your next chapter awaits</h3>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search by city name" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-
 
 <img src="https://images.pexels.com/photos/447440/summer-sun-sunset-yellow-447440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="welcome-page-image">
 
