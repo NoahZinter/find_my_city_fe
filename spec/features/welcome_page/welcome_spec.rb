@@ -8,7 +8,7 @@ RSpec.describe 'login' do
     expect(page).to have_content("Your next chapter awaits")
     expect(page).to have_button("Login")
     expect(page).to have_button("Search")
-    expect(page).to have_field("Search by city name")
+    expect(page).to have_field("city")
 
     click_on 'Login'
 

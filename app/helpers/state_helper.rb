@@ -1,5 +1,4 @@
 module StateHelper
-  def us_states
 def us_states
     [
       ['Alabama', 'AL'],
@@ -55,6 +54,5 @@ def us_states
       ['Wisconsin', 'WI'],
       ['Wyoming', 'WY']
     ]
-end
   end
 end
