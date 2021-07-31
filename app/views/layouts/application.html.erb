@@ -27,9 +27,9 @@
         <div class="container" class="">
           <%= form_with url: "/search", method: :get do |f| %>
           <%= f.label :city %>
-          <%= f.text_field :city, :value => 'Search for your new city' %>
-          <%= f.select(:state, options_for_select(us_states))%>
-          <%= f.submit 'Search' %>
+          <%= f.text_field :city%>
+          <%= f.select(:state, options_for_select(us_states)) %>
+          <%= f.submit 'City Name' %>
           <% end %>
         </div>
   </div>
@@ -63,3 +63,9 @@
 </html>
 
 
+
+
+          <form rm class="d-flex" action="/search">
+            <input class="form-control me-2" type="search" placeholder="Search by city name" aria-label="Search">
+            <b-button class="btn btn-outline-success" type="submit" href="/search" >Search</b-button>
+          </form>
