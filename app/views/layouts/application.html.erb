@@ -10,28 +10,35 @@
   </head>
 
   <body>
-    <!-- Bootstrap CSS -->
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
-<!-- Font Awesome CSS -->
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+  <!-- Bootstrap CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <!-- Font Awesome CSS -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <div class='row align-items-start'>
-        <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
-          Login
-        </button>
+      <% if current_user.nil? %>
+          <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+            Login
+          </button>
+        <% elsif !current_user.nil? %>
+          <button type="button" class="btn btn-info btn-round">
+          <%= button_to 'Logout', logout_path, method: :delete %>
+          </button>
+        <% end %>
       </div>
-            <h3>Your next chapter awaits</h3>
+        <h3>Your next chapter awaits</h3>
       <div class="search-bar">
         <div class="container" class="">
-          <form class="d-flex">
-          
-            <input class="form-control me-2" type="search" placeholder="Search by city name" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <%= form_with url: "/search", method: :get do |f| %>
+          <%= f.label :city %>
+          <%= f.text_field :city, :value => 'City Name Here' %>
+          <%= f.select(:state, options_for_select(us_states)) %>
+          <%= f.submit 'Search' %>
+          <% end %>
         </div>
-  </div>
+      </div>
     </div>
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">

@@ -4,7 +4,12 @@ class SessionsController < ApplicationController
     user = User.find_or_create_by(email: user_attributes[:email])
     user.update(user_attributes)
     session[:user_id] = user.id
-    redirect_to '/dashboard'
+    redirect_to '/'
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to root_path
   end
 
   private
