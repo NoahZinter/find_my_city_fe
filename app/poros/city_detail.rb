@@ -7,7 +7,7 @@ class CityDetail
               :total_score
 
   def initialize(response)
-    @categories = response[:data][:attributes][:categories]
+    @categories = response[:data][:attributes][:categories_hash_array]
     @name = response[:data][:attributes][:city]
     @picture = response[:data][:attributes][:picture]
     @state = response[:data][:attributes][:state]
