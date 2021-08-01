@@ -1,4 +1,4 @@
-class City
+class CityDetail
   attr_reader :image,
               :name,
               :total_score,
