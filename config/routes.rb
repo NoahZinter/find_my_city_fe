@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get '/', to: 'welcome#index', as: 'root'
 
-  get '/search', to: 'search#index'
+  get '/search', to: 'search#show'
 
   get '/auth/:provider/callback', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'

@@ -6,7 +6,7 @@
     <div class="col-6">
       <h1><%= @city.name %></h1>
       <img src= "<%= @city.picture %>" alt="" style="max-width: 80%">
-      <p><%= @city.summary %></p>
+      <p><%= sanitize @city.summary %></p>
       <div style="display: flex">
       <h4>Overall rating</h4>
         <div class="star-ratings-css">
@@ -17,8 +17,8 @@
       <button type="button" class="btn btn-primary">Add to Favorites</button>
     </div>
     <div class="col-4">
-      <% if @city_details.present? %>
-        <% @city_details.each do |detail| %>
+      <% if @city.categories.present? %>
+        <% @city.categories.each do |detail| %>
           <div style="display: flex">
             <h5 style="margin-right: auto"><%= detail[:name] %></h5>
             <% percentage = detail[:score_out_of_10] * 10 %>
