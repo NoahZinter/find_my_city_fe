@@ -10,26 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_29_013258) do
+ActiveRecord::Schema.define(version: 2021_08_01_180654) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cities", force: :cascade do |t|
-    t.string "name"
-    t.text "summary"
-    t.string "picture"
+    t.string "city"
+    t.string "state"
+    t.string "summary"
     t.float "total_score"
+    t.text "categories_hash_array"
+    t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.bigint "city_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["city_id"], name: "index_favorites_on_city_id"
+    t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "google_id"
     t.string "email"
     t.string "token"
-    t.string "google_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "favorites", "cities"
+  add_foreign_key "favorites", "users"
 end
