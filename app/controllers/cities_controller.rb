@@ -1,7 +1,6 @@
 class CitiesController < ApplicationController
   def show
     @city = City.find(params[:id])
-    # @city_details = CityDetailsFacade
     @city_details = [{:name=>"Housing", :score_out_of_10=>3.8375},
       {:name=>"Cost of Living", :score_out_of_10=>5.102},
       {:name=>"Startups", :score_out_of_10=>7.8645},
