@@ -1,17 +1,17 @@
 class CityDetail
-  attr_reader :image,
+  attr_reader :categories,
               :name,
-              :total_score,
-              :population,
-              :categories,
-              :summary
+              :picture,
+              :state,
+              :summary,
+              :total_score
 
-  def initialize(data)
-    @image = data[:image]
-    @name = data[:name]
-    @total_score = data[:total_score]
-    @population = data[:population]
-    @categories = data[:categories]
-    @summary = data[:summary]
+  def initialize(response)
+    @categories = response[:data][:attributes][:categories]
+    @name = response[:data][:attributes][:city]
+    @picture = response[:data][:attributes][:picture]
+    @state = response[:data][:attributes][:state]
+    @summary = response[:data][:attributes][:summary]
+    @total_score = response[:data][:attributes][:total_score]
   end
 end
