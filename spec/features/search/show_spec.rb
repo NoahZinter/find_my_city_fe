@@ -34,4 +34,10 @@ RSpec.describe 'City Search' do
     end
   end
 
+  it 'should search for multi-word cities'
+
+  it 'should not accept numbers in city field'
+
+  it 'should show a 404 for city not found'
+
 end
