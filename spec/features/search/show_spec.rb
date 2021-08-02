@@ -19,12 +19,19 @@ RSpec.describe 'City Search' do
 
   it 'displays searched city info' do
     visit root_path
-    fill_in('city', with: 'Denver')
-    select 'Colorado', :from => 'state'
+    fill_in('city', with: 'Miami')
+    select 'Florida', :from => 'state'
     click_button 'Search'
+    city = CityFacade.show_city('Miami', 'FL')
+    categories = city.categories
 
-    expect(page).to have_content 'Denver'
-    
+    expect(page).to have_content 'Miami'
+    expect(page).to have_content 'Miami, Florida, is among the top cities with a free business environment. According to our city rankings, this is a good place to live with high ratings in startups, healthcare and leisure & culture.'
+    expect(page).to have_content 'Miami is one of the top ten city matches for 0.3% of Teleport users.'
+    expect(page).to have_content 'Overall Rating'
+    categories.each do |hash|
+      expect(page).to have_content(hash[:name])
+    end
   end
 
 end
