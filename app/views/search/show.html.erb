@@ -7,6 +7,7 @@
       <h1><%= @city.name %></h1>
       <img src= "<%= @city.picture %>" alt="" style="max-width: 80%">
       <p><%= sanitize @city.summary %></p>
+
       <div style="display: flex">
       <h4>Overall Rating</h4>
         <div class="star-ratings-css">
@@ -14,9 +15,30 @@
           <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
         </div>
       </div>
+
       <button type="button" class="btn btn-primary">Add to Favorites</button>
+
+      <div class="mt-4 border border-primary p-4">
+        <span class="">
+          <h2>Todays Forecast</h2>
+          Description: <%= @city_weather.description %><br/>
+          Temperature: <%= @city_weather.temp %><br/>
+          Maximum Temperature: <%= @city_weather.temp_max %><br/>
+          Minimum Temperature: <%= @city_weather.temp_min %><br/>
+          <% if !@city_weather.wind_speed.nil? %><br/>
+            Wind Speed: <%= @city_weather.wind_speed %><br/>
+          <% else %>
+            Wind Speed: 0<br/>
+          <% end %>
+          Sunrise: <% @time = Time.at(@city_weather.sunrise) %><%= @time.strftime('%l:%M') %> AM<br/>
+          Sunset: <% @set = Time.at(@city_weather.sunset) %><%= @set.strftime('%l:%M') %> PM<br/>
+          Humidity: <%= @city_weather.humidity %>%<br/>
+          Visability: <%= @city_weather.visibility %> Feet<br/>
+        </span>
+      </div>
+
     </div>
-    <div class="col-4">
+    <div class="col-4" style="margin-left: auto">
       <% if @city.categories.present? %>
         <% @city.categories.each do |detail| %>
           <div style="display: flex">
@@ -35,5 +57,3 @@
     </div>
   </div>
 </div>
-
-<%= @city_weather.description %>
