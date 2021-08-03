@@ -40,4 +40,14 @@ RSpec.describe 'City Search' do
 
   it 'should show a 404 for city not found'
 
+  it 'has city weather' do
+    visit root_path
+    fill_in('city', with: 'Denver')
+    select 'Colorado', :from => 'state'
+    click_button 'Search'
+    city = WeatherFacade.weather('Denver', 'CO')
+
+
+    expect(page).to have_content(city.description)
+  end
 end
