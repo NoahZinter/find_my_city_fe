@@ -3,15 +3,31 @@
 .welcome-page-image{
   width: 100%;
   bottom: 0%;
-  position: fixed;
-  z-index:-2;
-  opacity: 0.75
+  object-fit: cover;
+  opacity: 0.75;
+  max-height: 60vh;
+  margin-top: 8%;
+}
+
+.info-box-style{
+  background-color: teal;
 }
 
 .search-bar{
   margin-top: 5%;
-  z-index: 2;
-  position: relative;
+}
+
+.company-slogan{
+  z-index: 10;
+  font-size: 50px;
+  margin-left: 60%;
+  position: absolute;
+  // width: 100vw;
+  margin-top: 20%;
+}
+
+.company-name{
+  font-size: 60px;
 }
 
 .star-ratings-css {
