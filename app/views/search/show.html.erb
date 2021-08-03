@@ -14,7 +14,9 @@
           <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
         </div>
       </div>
-      <button type="button" class="btn btn-primary">Add to Favorites</button>
+      <button type="button" class="btn btn-primary">
+        <%= button_to 'Add to Favorites', {:controller => "favorites", :action => "create", :city => @city, :user_id=> current_user.id}, :method=>:post %>
+      </button>
     </div>
     <div class="col-4">
       <% if @city.categories.present? %>

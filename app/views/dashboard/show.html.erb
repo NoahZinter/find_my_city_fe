@@ -1,1 +1,18 @@
-<h1>Welcome <%= @user.email %></h1>
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-6">
+      <h1>My Favorites</h1>
+      <br>
+      <% @favorites.each do |city| %>
+        <% city = City.find(city.city_id) %>
+        <img src= "<%= city.picture %>" alt="" style="max-width: 55%">
+        <h4><%= city.name %></h4>
+        <button type="button" class="btn btn-danger">
+          <%= button_to 'Delete', {:controller => "favorites", :action => "destroy", :city_id => city.id}, :method=>:delete %>
+        </button>
+        <br>
+        <br>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -8,5 +8,7 @@ Rails.application.routes.draw do
 
   get '/dashboard', to: 'dashboard#show'
 
+  post '/favorites/new', to: 'favorites#create'
+  delete '/favorites', to: 'favorites#destroy'
   resources :cities, only: :show
 end
