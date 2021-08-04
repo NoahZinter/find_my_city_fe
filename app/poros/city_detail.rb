@@ -4,14 +4,25 @@ class CityDetail
               :picture,
               :state,
               :summary,
-              :total_score
+              :total_score,
+              :population
 
   def initialize(response)
-    @categories = response[:data][:attributes][:categories_hash_array]
-    @name = response[:data][:attributes][:city]
-    @picture = response[:data][:attributes][:picture]
-    @state = response[:data][:attributes][:state]
-    @summary = response[:data][:attributes][:summary]
-    @total_score = response[:data][:attributes][:total_score]
+    if !response[:data][:attributes][:population].nil?
+      @population = response[:data][:attributes][:population]
+      @name = response[:data][:attributes][:city]
+      @state = response[:data][:attributes][:state]
+      @total_score = nil
+      @categories = nil
+      @summary = nil
+    else
+      @population = nil
+      @categories = response[:data][:attributes][:categories_hash_array]
+      @name = response[:data][:attributes][:city]
+      @state = response[:data][:attributes][:state]
+      @summary = response[:data][:attributes][:summary]
+      @total_score = response[:data][:attributes][:total_score]
+    end
+    # binding.pry
   end
 end
