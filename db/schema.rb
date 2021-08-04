@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_01_180654) do
+ActiveRecord::Schema.define(version: 2021_08_04_160612) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 2021_08_01_180654) do
     t.string "summary"
     t.float "total_score"
     t.text "categories_hash_array"
-    t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "population"
   end
 
   create_table "favorites", force: :cascade do |t|
