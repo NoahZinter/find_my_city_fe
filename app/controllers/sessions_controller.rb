@@ -1,25 +1,15 @@
 class SessionsController < ApplicationController
 
   def create
-    if params["password"].present?
-      params["email"] = params["email"].downcase
-      if User.where('email = ?', "#{params[:email]}").nil?
-        user = User.create!(user_params)
-        session[:user_id] = user.id
-      else
-        user = User.where('email = ?', "#{params[:email]}")
-        session[:user_id] = user[0].id
-      end
-    else params["token"].present?
-      user = User.find_or_create_by(email: user_attributes[:email])
-      user.update(user_attributes)
-      session[:user_id] = user.id
-    end
+    params["email"] = params["email"].downcase
+    user = UserService.get_user(params[:email], params[:password])
+    session[:user_id] = user[:data][:attributes][:id]
+    session[:email] = user[:data][:attributes][:email]
     redirect_to '/dashboard'
   end
 
   def destroy
-    session[:user_id] = nil
+    reset_session
     redirect_to root_path
   end
 
