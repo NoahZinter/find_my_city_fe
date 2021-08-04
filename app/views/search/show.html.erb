@@ -1,16 +1,27 @@
 <div class="container" style="margin-top: 30px">
   <div class="row justify-content-start">
     <div class="col-6">
-      <h1 class="mt-4 mb-4" style="font-size: 50px"><%= @city.name %> <%= @city.state %></h1>
-      <p><%= sanitize @city.summary %></p>
+      <% if !@city.total_score.nil? %>
+        <h1 class="mt-4 mb-4" style="font-size: 50px"><%= @city.name %>, <%= @city.state %></h1>
+        <p><%= sanitize @city.summary %></p>
+      <% else %>
+        <h1 class="mt-4 mb-4" style="font-size: 50px"><%= @city.name.split(",")[0] %>,<%= @city.name.split(",")[1] %></h1>
+      <% end %>
 
-      <div style="display: flex">
-      <h4>Overall Rating</h4>
-        <div class="star-ratings-css">
-          <div class="star-ratings-css-top" style="width: <%="#{@city.total_score}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <% if !@city.total_score.nil? %>
+        <div style="display: flex">
+        <h4>Overall Rating</h4>
+          <div class="star-ratings-css">
+            <div class="star-ratings-css-top" style="width: <%="#{@city.total_score}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          </div>
         </div>
-      </div>
+        <% else %>
+        <div class="" style="display: flex">
+          <h5 class="mr-1">Population: </h5>
+          <h5><%= @city.population %></h5>
+        </div>
+      <% end %>
 
       <button type="button" class="btn btn-primary mt-2">Add to Favorites</button>
 
@@ -24,12 +35,11 @@
           <% if !@city_weather.wind_speed.nil? %><br/>
             Wind Speed: <%= @city_weather.wind_speed %><br/>
           <% else %>
-            Wind Speed: 0<br/>
+            Wind Speed: No Result<br/>
           <% end %>
           Sunrise: <% @time = Time.at(@city_weather.sunrise) %><%= @time.strftime('%l:%M') %> AM<br/>
           Sunset: <% @set = Time.at(@city_weather.sunset) %><%= @set.strftime('%l:%M') %> PM<br/>
           Humidity: <%= @city_weather.humidity %>%<br/>
-          Visability: <%= @city_weather.visibility %> Feet<br/>
         </span>
       </div>
 
@@ -49,6 +59,9 @@
           </div>
           <br>
         <% end %>
+      <% else %>
+        <p style="margin-top: 30px">Sorry, we do not have any scores available for this city.</p>
+        <p>Scores are usually only available for larger urban cities.</p>
       <% end %>
     </div>
   </div>
