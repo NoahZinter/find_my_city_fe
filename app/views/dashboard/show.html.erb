@@ -1,1 +1,28 @@
 <h1>Welcome <%= @user.email %></h1>
+
+<div class="row justify-content-between">
+
+  <div class="col-4">
+    column one
+  </div>
+
+  <div class="col-4">
+    <h3>City Favorites</h3>
+    <% if !@favorites.nil? %>
+      <% @favorites.each do |city| %>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://classroomclipart.com/images/gallery/Clipart/Environment/TN_pollution-free-electric-car-driving-on-city-street-clipart.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><%= city.summary %></p>
+            <a href="#" class="card-link">Delete City</a>
+          </div>
+        </div>
+
+      <% end %>
+    <% else %>
+      <p>Search cities to add to your favorites!</p>
+    <% end %>
+  </div>
+
+</div>
