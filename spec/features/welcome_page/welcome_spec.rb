@@ -4,7 +4,6 @@ RSpec.describe 'login' do
   it 'can login in a user by their google account' do
     visit root_path
 
-    expect(page).to have_content("Find My City")
     expect(page).to have_content("Your next chapter awaits")
     expect(page).to have_button("Login")
     expect(page).to have_button("Search")
@@ -12,12 +11,22 @@ RSpec.describe 'login' do
 
     click_on 'Login'
 
-    expect(page).to have_content("Find My City", :count => 2)
+    expect(page).to have_content("Find My City")
     expect(page).to have_content("Not a member yet?")
     expect(page).to have_content("Login using Google")
   end
 
-  xit 'test that you can login' do
+  it 'test that you can login' do
+    visit root_path
 
+    click_on "Login"
+    fill_in('Email', with: 'testytester@gmail.com')
+    fill_in('Password', with: 'abcdefg')
+    click_on "Log in"
+
+    expect(current_path).to eq('/dashboard')
+    click_on "Logout"
+
+    expect(current_path).to eq(root_path)
   end
 end
