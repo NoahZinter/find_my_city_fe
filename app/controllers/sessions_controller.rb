@@ -1,11 +1,16 @@
 class SessionsController < ApplicationController
 
   def create
-    params["email"] = params["email"].downcase
-    user = UserService.get_user(params[:email], params[:password])
-    session[:user_id] = user[:data][:attributes][:id]
-    session[:email] = user[:data][:attributes][:email]
-    redirect_to '/dashboard'
+    if params[:email].empty? || params[:password].empty?
+      flash[:error] = "Must fill out email & password fields"
+      redirect_to root_path
+    else
+      params["email"] = params["email"].downcase
+      user = UserService.get_user(params[:email], params[:password])
+      session[:user_id] = user[:data][:attributes][:id]
+      session[:email] = user[:data][:attributes][:email]
+      redirect_to '/dashboard'
+    end
   end
 
   def destroy

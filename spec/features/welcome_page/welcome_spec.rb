@@ -29,4 +29,14 @@ RSpec.describe 'login' do
 
     expect(current_path).to eq(root_path)
   end
+
+  it 'wont let users login without both email and password' do
+    visit root_path
+    click_on "Login"
+    fill_in('Email', with: 'testytester@gmail.com')
+    click_on "Log in"
+
+    expect(current_path).to eq(root_path)
+    expect(page).to have_content('Must fill out email & password fields')
+  end
 end
