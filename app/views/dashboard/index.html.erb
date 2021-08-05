@@ -21,7 +21,7 @@
             <img src="https://classroomclipart.com/images/gallery/Clipart/Environment/TN_pollution-free-electric-car-driving-on-city-street-clipart.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text"><%= sanitize favorite.summary %></p>
-              <button><%= button_to "Delete City", dashboard_index_path(favorite.id), method: :delete %></button>
+              <button><%= button_to "Delete City", "/dashboard/#{favorite.id}", method: :delete %></button>
             </div>
           </div>
         </ol>

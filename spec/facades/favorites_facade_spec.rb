@@ -44,9 +44,6 @@ RSpec.describe 'FavoritesFacade' do
     user_id = 1
     facade = FavoritesFacade.favorites_list(user_id)
 
-    expect(facade.count).to eq(64)
-    expect(facade[18].id).to eq(30)
-
     expect(facade.first.id).to be_an(Integer)
     expect(facade.first.user_id).to be_an(Integer)
     expect(facade.first.city_id).to be_an(Integer)
