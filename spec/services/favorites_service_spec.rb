@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe FavoritesService do
-  it 'returns the current users favorite city/cities', :vcr do
+  it 'returns the users favorite city that was created', :vcr do
     user_id = 1
     city_id = 1
-    data = FavoritesService.user_favorites_search(user_id, city_id)
+    data = FavoritesService.user_adds_favorites(user_id, city_id)
 
     expect(data).to be_a(Hash)
     expect(data[:data]).to be_a(Hash)
@@ -28,5 +28,39 @@ RSpec.describe FavoritesService do
     expect(data[:data][:attributes]).to have_key(:summary)
     expect(data[:data][:attributes]).to have_key(:total_score)
     expect(data[:data][:attributes]).to have_key(:categories_hash_array)
+  end
+
+  it 'returns a users list of favorited cities', :vcr do
+    user_id = 1
+    data = FavoritesService.user_favorites_list(user_id)[:data]
+
+    expect(data.count).to eq(65)
+    expect(data).to be_an(Array)
+
+    expect(data.first).to have_key(:id)
+    expect(data.first[:id]).to eq("13")
+    expect(data.first[:attributes]).to have_key(:city_name)
+    expect(data.first[:attributes][:city_name]).to eq("Chicago")
+
+    expect(data.last).to have_key(:id)
+    expect(data.last[:id]).to eq("79")
+    expect(data.last[:attributes]).to have_key(:city_name)
+    expect(data.last[:attributes][:city_name]).to eq("Chicago")
+  end
+
+  it 'can delete a city from users favorites' do
+    user_id = 1
+    data1 = FavoritesService.user_favorites_list(user_id)[:data]
+
+    first_favorite = data1.first
+
+    favorite_id = data1.first[:id]
+    response = FavoritesService.delete_favorite(favorite_id)
+
+    data2 = FavoritesService.user_favorites_list(user_id)[:data]
+    new_first_favorite = data2.first
+
+    expect(new_first_favorite).to_not eq(first_favorite)
+    expect(response.status).to eq(204)
   end
 end

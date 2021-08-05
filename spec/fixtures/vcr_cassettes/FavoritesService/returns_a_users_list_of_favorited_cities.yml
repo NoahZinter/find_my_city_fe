@@ -1,0 +1,1125 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://helpmefindmycity-api.herokuapp.com/api/v1/users/1/favorites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 05 Aug 2021 07:34:00 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"827fe1b8a2d59abbaa5b0f6052e63b24"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6fd342a3-ab0e-4abc-a492-4a4596251a7e
+      X-Runtime:
+      - '0.065164'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"13","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"14","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"15","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"16","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"17","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"18","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"19","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"20","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"21","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"22","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"23","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"24","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"25","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"26","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"27","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"28","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"29","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"30","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"31","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"32","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"33","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"34","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"35","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"36","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"37","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"38","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"39","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"40","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"41","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"42","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"43","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"44","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"45","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"46","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"47","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"48","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"49","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"50","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"51","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"52","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"53","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"54","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"55","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"56","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"57","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"58","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"59","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"60","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"61","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"62","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"63","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"64","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"65","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"66","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"67","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"68","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"69","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"70","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"71","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"72","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"73","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"74","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"77","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}},{"id":"78","type":"favorite","attributes":{"user_id":1,"city_id":9,"city_name":"Los
+        Angeles","population":null,"state":"California","summary":"\u003cp\u003e\n    Los
+        Angeles is a sprawling city of 500 square miles and the heart of a metropolitan
+        area with 18 million residents. It is a fabled California region, home to
+        Hollywood and America''s \u003cb\u003eentertainment industry\u003c/b\u003e
+        with \u003cb\u003eyear-round sunshine\u003c/b\u003e, world-famous beaches,
+        and an intense \u003cb\u003ecar culture\u003c/b\u003e. The \"City of Angels\"
+        is a magnet to people from around the world and a uniquely exciting environment.\n\u003c/p\u003e\n\n\n    \u003cp\u003eLos
+        Angeles is one of the top ten city matches for 11.5% of Teleport users.\u003c/p\u003e\n","total_score":63.43,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e1.5274999999999999}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.556000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e10.0},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e10.0}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e3.9585000000000004}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e3.6770000000000005}, {:name=\u003e\"Business Freedom\",
+        :score_out_of_10=\u003e8.574666666666667}, {:name=\u003e\"Safety\", :score_out_of_10=\u003e5.705},
+        {:name=\u003e\"Healthcare\", :score_out_of_10=\u003e8.439666666666666}, {:name=\u003e\"Education\",
+        :score_out_of_10=\u003e8.6245}, {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e4.7315000000000005},
+        {:name=\u003e\"Economy\", :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\",
+        :score_out_of_10=\u003e4.7675}, {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e5.496500000000001},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e9.196}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.959999999999999}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e6.747}]"}},{"id":"79","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}}]}'
+  recorded_at: Thu, 05 Aug 2021 07:34:00 GMT
+recorded_with: VCR 6.0.0
