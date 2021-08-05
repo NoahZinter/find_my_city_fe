@@ -8,3 +8,4 @@ RSpec.describe 'user service' do
     expect(result[:data][:attributes][:email]).to eq("sdfsdf@gmail.com")
   end
 end
+
