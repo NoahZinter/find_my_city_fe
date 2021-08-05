@@ -18,6 +18,6 @@ class FavoriteCity
     @state = poro_info[:data][:attributes][:state]
     @summary = poro_info[:data][:attributes][:summary]
     @total_score = poro_info[:data][:attributes][:total_score]
-    @categories = poro_info[:data][:attributes][:categories_hash_array]
+    @categories = eval(poro_info[:data][:attributes][:categories_hash_array])
   end
 end
