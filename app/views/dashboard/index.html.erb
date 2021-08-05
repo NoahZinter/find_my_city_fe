@@ -71,7 +71,7 @@
                 <p class="card-text"><%= sanitize favorite.summary %></p>
                 <div style="display: flex" class="justify-content-around">
                   <%= button_to "View City", dashboard_index_path(), method: :get, params:{selected_city: favorite}%>
-                  <%= button_to "Delete City", dashboard_index_path(favorite.id), method: :delete %>
+                  <button><%= button_to "Delete City", "/dashboard/#{favorite.id}", method: :delete %></button>
                 </div>
               </div>
             </div>

@@ -44,9 +44,6 @@ RSpec.describe 'FavoritesFacade' do
     user_id = 1
     facade = FavoritesFacade.favorites_list(user_id)
 
-    expect(facade.count).to eq(64)
-    expect(facade[18].id).to eq(30)
-
     expect(facade.first.id).to be_an(Integer)
     expect(facade.first.user_id).to be_an(Integer)
     expect(facade.first.city_id).to be_an(Integer)
@@ -58,14 +55,16 @@ RSpec.describe 'FavoritesFacade' do
   end
 
   it 'deletes a users favorite city' do
-    user_id = 1
-    fav_list = FavoritesFacade.favorites_list(user_id)
+    VCR.insert_cassette('returns_a_list_of_cities_a_user_has_favorited') do
+      user_id = 1
+      fav_list = FavoritesFacade.favorites_list(user_id)
 
-    favorite_id = fav_list.first.id
-    response = FavoritesFacade.delete_favorite_city(favorite_id)
+      favorite_id = fav_list.first.id
+      response = FavoritesFacade.delete_favorite_city(favorite_id)
 
-    expect(response.status).to eq(204)
-    expect(response.status).to_not eq(200)
-    expect(response.status).to_not eq(404)
+      expect(response.status).to eq(204)
+      expect(response.status).to_not eq(200)
+      expect(response.status).to_not eq(404)
+    end
   end
 end
