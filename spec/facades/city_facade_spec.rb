@@ -18,14 +18,4 @@ RSpec.describe CityFacade do
       expect(hash[:score_out_of_10]).is_a? Float
     end
   end
-
-  it 'can add a city (with no scores) to favorites' do
-    city = CityFacade.show_city('Mobile', 'AL')
-
-    expect(city.population).to be_a(Integer)
-    
-    click_on('Add to Favorites')
-
-    expect(current_path).to eq(dashboard_index_path)
-  end
 end
