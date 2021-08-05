@@ -13,7 +13,7 @@ class FavoriteCity
     if !poro_info[:attributes][:population].nil?
       @id = poro_info[:id].to_i
       @population = poro_info[:attributes][:population]
-      @name = poro_info[:attributes][:city]
+      @name = poro_info[:attributes][:city_name]
       @state = poro_info[:attributes][:state]
       @total_score = nil
       @categories = nil
