@@ -10,36 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_04_160612) do
+ActiveRecord::Schema.define(version: 2021_08_04_214134) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "favorites", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "city_id"
+  create_table "cities", force: :cascade do |t|
     t.string "city"
     t.string "state"
     t.string "summary"
     t.float "total_score"
+    t.integer "population"
     t.text "categories_hash_array"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "population"
   end
 
   create_table "favorites", force: :cascade do |t|
+    t.string "city_name"
+    t.string "state"
+    t.string "summary"
     t.bigint "city_id"
     t.bigint "user_id"
+    t.float "total_score"
+    t.integer "population"
+    t.text "categories_hash_array"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["city_id"], name: "index_favorites_on_city_id"
+    t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "password"
     t.string "email"
-    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "favorites", "cities"
+  add_foreign_key "favorites", "users"
 end
