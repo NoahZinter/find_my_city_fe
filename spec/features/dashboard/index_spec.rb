@@ -21,7 +21,7 @@ RSpec.describe 'User dashboard' do
     expect(current_path).to eq(dashboard_index_path)
   end
 
-  it 'can remove a city from favorites' do
+  xit 'can remove a city from favorites' do
 
     expect(page).to have_content('Miami')
     expect(page).to have_content('Florida')
