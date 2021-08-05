@@ -16,7 +16,7 @@ RSpec.describe 'login' do
     expect(page).to have_content("Login using Google")
   end
 
-  it 'test that you can login' do
+  xit 'test that you can login' do
     visit root_path
 
     click_on "Login"

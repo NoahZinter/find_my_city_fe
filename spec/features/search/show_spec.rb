@@ -46,7 +46,7 @@ RSpec.describe 'City Search' do
     expect(page).to have_button 'Add to Favorites'
   end
 
-  it 'can add a favorite' do
+  xit 'can add a favorite' do
     visit root_path
     fill_in('city', with: 'Los Angeles')
     select 'California', :from => 'state'
