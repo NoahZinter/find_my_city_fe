@@ -9,25 +9,29 @@
 
 
         <% if !@selected_city.nil? %>
-          <%# !if @selected_city.population.nil? %>
-          <%# else %>
+
+
           <div style="display: flex">
             <h2><%= @selected_city.city_name %></h2><h2>, </h2>
             <h2><%= @selected_city.state %></h2>
           </div>
           <%= sanitize @selected_city.summary %>
-          <div style="display: flex">
-            <h3>Overall Rating</h3><hr>
-              <div class="star-ratings-css">
-                <div class="star-ratings-css-top" style="width: <%="#{@selected_city.total_score}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
-              </div>
-          </div>
+
+
 
           <div class="mt-4">
-            <h3 class="mb-4">City Information</h3><hr>
 
-            <% if @selected_city.categories.present? %>
+            <% if @selected_city.categories.present?  %>
+
+            <div style="display: flex">
+              <h3>Overall Rating</h3><hr>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: <%="#{@selected_city.total_score}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+            </div>
+
+            <h3 class="mb-4">City Information</h3><hr>
               <% @selected_city.categories.each do |detail| %>
                 <div style="display: flex">
                   <h5 style="margin-right: auto"><%= detail[:name] %></h5>
@@ -43,6 +47,7 @@
               <% end %>
 
             <% else %>
+            <h3 class="mb-4">City Information</h3><hr>
               <p style="margin-top: 30px">Sorry, we do not have any scores available for this city.</p>
               <p>Scores are usually only available for larger urban cities.</p>
             <% end %>
@@ -51,17 +56,20 @@
         <% elsif @favorites.length >= 1 && @selected_city.nil? %>
           <h2><%= @favorites.first.city_name %></h2>
           <%= sanitize @favorites.first.summary %>
-          <div style="display: flex">
-            <h3>Overall Rating</h3><hr>
-              <div class="star-ratings-css">
-                <div class="star-ratings-css-top" style="width: <%="#{@favorites.first.total_score}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
-              </div>
-          </div>
+
 
           <div class="mt-4">
-            <h3 class="mb-4">City Information</h3><hr>
             <% if @favorites.first.categories.present? %>
+
+            <div style="display: flex">
+              <h3>Overall Rating</h3><hr>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: <%="#{@favorites.first.total_score}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+            </div>
+            <h3 class="mb-4">City Information</h3><hr>
+
               <% @favorites.first.categories.each do |detail| %>
                 <div style="display: flex">
                   <h5 style="margin-right: auto"><%= detail[:name] %></h5>
@@ -77,6 +85,7 @@
               <% end %>
 
             <% else %>
+            <h3 class="mb-4">City Information</h3><hr>
               <p style="margin-top: 30px">Sorry, we do not have any scores available for this city.</p>
               <p>Scores are usually only available for larger urban cities.</p>
             <% end %>
@@ -91,6 +100,8 @@
       </span>
     </div>
   </div>
+
+
 
 
 
