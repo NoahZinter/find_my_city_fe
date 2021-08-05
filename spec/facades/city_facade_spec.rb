@@ -4,7 +4,6 @@ RSpec.describe CityFacade do
   it 'creates a searched-for city' do
     city = CityFacade.show_city('Chicago', 'IL')
 
-    expect(city).is_a? CityDetail
     expect(city.categories).is_a? Array
     expect(city.name).to eq 'Chicago'
     expect(city.picture).is_a? String
