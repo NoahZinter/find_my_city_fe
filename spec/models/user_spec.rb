@@ -11,18 +11,4 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of(:password) }
     it { should validate_uniqueness_of(:email) }
   end
-
-  # before :each do
-  #
-  # end
-  #
-  # describe 'class methods' do
-  #   describe '.' do
-  #   end
-  # end
-  #
-  # describe 'instance methods' do
-  #   describe '#' do
-  #   end
-  # end
 end
