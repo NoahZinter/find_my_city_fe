@@ -23,26 +23,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 05 Aug 2021 07:33:46 GMT
+      - Thu, 05 Aug 2021 18:27:30 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"dd924df8bb61ca5e106cfbb32c6b991e"
+      - W/"c36dd2f853e362dd37bdfdff297b63e0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - '00729e1e-c249-4b89-8ad0-ddcfbc1051bb'
+      - abfd687d-245b-49c2-aede-ded24b1a71fe
       X-Runtime:
-      - '0.037586'
+      - '0.019316'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"77","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+      string: '{"data":{"id":"141","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
         Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
         to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
         capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
@@ -59,5 +59,5 @@ http_interactions:
         {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
         {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
         :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}}}'
-  recorded_at: Thu, 05 Aug 2021 07:33:46 GMT
+  recorded_at: Thu, 05 Aug 2021 18:27:30 GMT
 recorded_with: VCR 6.0.0

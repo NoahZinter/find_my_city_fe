@@ -8,6 +8,7 @@ RSpec.describe 'login' do
     expect(page).to have_button("Login")
     expect(page).to have_button("Search")
     expect(page).to have_field("city")
+    expect(page).not_to have_button 'Logout'
 
     click_on 'Login'
 
@@ -27,7 +28,8 @@ RSpec.describe 'login' do
     expect(current_path).to eq(dashboard_index_path)
     expect(page).to have_content('Welcome testytester@gmail.com')
     expect(page).to_not have_content('Must fill out email & password fields')
-
+    expect(page).to have_button 'Logout'
+    expect(page).to have_button 'My Dashboard'
     click_on "Logout"
 
     expect(current_path).to eq(root_path)
