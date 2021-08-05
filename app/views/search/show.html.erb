@@ -23,7 +23,9 @@
         </div>
       <% end %>
 
-      <button type="button" class="btn btn-primary mt-2">Add to Favorites</button>
+      <button type="button" class="btn btn-primary mt-2">
+        <%= button_to 'Add to Favorites', dashboard_path(@city) %>
+      </button>
 
       <div class="mt-4 border border-primary p-4">
         <span class="">

@@ -23,6 +23,5 @@ class CityDetail
       @summary = response[:data][:attributes][:summary]
       @total_score = response[:data][:attributes][:total_score]
     end
-    # binding.pry
   end
 end
