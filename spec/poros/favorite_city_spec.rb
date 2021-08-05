@@ -27,7 +27,7 @@ RSpec.describe FavoriteCity do
     expect(poro.city_name).to eq('Chicago')
     expect(poro.population).to eq(nil)
     expect(poro.state).to eq("Illinois")
-    expect(poro.summary).to eq("Chicago, Illinois, is among the est cities with a viant statu scene.            Accoding to ou city ankings, this is a good lace to live with high atings in ventue caital, usiness feedom and healthcae.            Chicago is one of the to ten city matches fo 5.5% of Teleot uses.")
+    expect(poro.summary).to eq("<p>Chicago, Illinois, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Chicago is one of the top ten city matches for 5.5% of Teleport users.</p>\n")
     expect(poro.total_score).to eq(62.91)
     expect(poro.categories).to eq([{:name=>"Housing", :score_out_of_10=>3.7020000000000004},
                                     {:name=>"Cost of Living", :score_out_of_10=>4.766000000000001},
