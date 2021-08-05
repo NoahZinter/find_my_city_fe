@@ -118,15 +118,15 @@
 
       <div >
         <% @favorites.each do |favorite| %>
-          <ol style="margin: auto; padding: 0px;" class="mx-auto mt-4">
+          <ol style="margin: auto; padding: 0px;" class="mx-auto mt-4 mb-4">
             <div class="card mx-auto" style="width: 18rem;">
               <img src="https://cliparting.com/wp-content/uploads/2016/11/City-clip-art-free-clipart-images-7.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <div style="display: flex">
-                  <h4><%= favorite.city_name %></h4><h4>, </h4>
-                  <h4 class="ml-2"><%= favorite.state %></h4>
+                <div style="display: flex" class="mb-2">
+                  <h4 class="ml-2"><%= favorite.city_name %></h4><h4>, </h4>
+                  <h4><%= favorite.state %></h4>
                 </div>
-                <p class="card-text"><%= sanitize favorite.summary %></p>
+
                 <div style="display: flex" class="justify-content-around">
                   <%= button_to "View City", dashboard_index_path(), method: :get, params:{selected_city: favorite.city_name}%>
                   <%= button_to "Delete City", "/dashboard/#{favorite.id}", method: :delete %>
