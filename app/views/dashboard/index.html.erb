@@ -9,13 +9,50 @@
 
 
         <% if !@selected_city.nil? %>
-          <h2><%=  %></h2>
+          <%# !if @selected_city.population.nil? %>
+          <%# else %>
+          <div style="display: flex">
+            <h2><%= @selected_city.city_name %></h2><h2>, </h2>
+            <h2><%= @selected_city.state %></h2>
+          </div>
+          <%= sanitize @selected_city.summary %>
+          <div style="display: flex">
+            <h3>Overall Rating</h3><hr>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: <%="#{@selected_city.total_score}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+          </div>
 
-        <% elsif %>
+          <div class="mt-4">
+            <h3 class="mb-4">City Information</h3><hr>
+
+            <% if @selected_city.categories.present? %>
+              <% @selected_city.categories.each do |detail| %>
+                <div style="display: flex">
+                  <h5 style="margin-right: auto"><%= detail[:name] %></h5>
+                  <% percentage = detail[:score_out_of_10] * 10 %>
+                  <div style="margin-left: auto">
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: <%="#{percentage}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+              <% end %>
+
+            <% else %>
+              <p style="margin-top: 30px">Sorry, we do not have any scores available for this city.</p>
+              <p>Scores are usually only available for larger urban cities.</p>
+            <% end %>
+          </div>
+
+        <% elsif @favorites.length >= 1 && @selected_city.nil? %>
           <h2><%= @favorites.first.city_name %></h2>
           <%= sanitize @favorites.first.summary %>
           <div style="display: flex">
-            <h4>Overall Rating</h4><hr>
+            <h3>Overall Rating</h3><hr>
               <div class="star-ratings-css">
                 <div class="star-ratings-css-top" style="width: <%="#{@favorites.first.total_score}"%>%"><span>★</span><span>★</span><span>★</span><span>★</span></div>
                 <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span></div>
@@ -23,7 +60,7 @@
           </div>
 
           <div class="mt-4">
-            <h2 class="mb-4">City Information</h2><hr>
+            <h3 class="mb-4">City Information</h3><hr>
             <% if @favorites.first.categories.present? %>
               <% @favorites.first.categories.each do |detail| %>
                 <div style="display: flex">
@@ -47,7 +84,7 @@
 
         <% else @favorites.nil? %>
           <h5 class= "mb-3">There is nothing to display at this time. Search cities to add to your favorites!</h5>
-            <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg" alt="" style="width: 100%; opacity: 50%">
+            <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg" alt="" style="width: 50%; opacity: 25%">
         <% end %>
 
 
@@ -63,15 +100,18 @@
 
       <div >
         <% @favorites.each do |favorite| %>
-          <ol style="margin: auto; padding: 0px;" class="mx-auto">
+          <ol style="margin: auto; padding: 0px;" class="mx-auto mt-4">
             <div class="card mx-auto" style="width: 18rem;">
               <img src="https://cliparting.com/wp-content/uploads/2016/11/City-clip-art-free-clipart-images-7.jpg" class="card-img-top" alt="...">
-              <!-- <img src="https://classroomclipart.com/images/gallery/Clipart/Environment/TN_pollution-free-electric-car-driving-on-city-street-clipart.jpg" class="card-img-top" alt="..."> -->
               <div class="card-body">
+                <div style="display: flex">
+                  <h4><%= favorite.city_name %></h4><h4>, </h4>
+                  <h4><%= favorite.state %></h4>
+                </div>
                 <p class="card-text"><%= sanitize favorite.summary %></p>
                 <div style="display: flex" class="justify-content-around">
-                  <%= button_to "View City", dashboard_index_path(), method: :get, params:{selected_city: favorite}%>
-                  <button><%= button_to "Delete City", "/dashboard/#{favorite.id}", method: :delete %></button>
+                  <%= button_to "View City", dashboard_index_path(), method: :get, params:{selected_city: favorite.city_name}%>
+                  <%= button_to "Delete City", "/dashboard/#{favorite.id}", method: :delete %>
                 </div>
               </div>
             </div>

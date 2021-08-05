@@ -2,11 +2,14 @@ class DashboardController < ApplicationController
   def index
     @user = current_user
     @favorites = FavoritesFacade.favorites_list(current_user[:id])
-    if params[:selected_city]
-      # @favorites.find do |favorite|
 
-      @selected_city = params[:selected_city]
+    if params[:selected_city]
+      selected_city_name = params[:selected_city]
+      @selected_city = @favorites.find do |favorite|
+        favorite.city_name == selected_city_name
+      end
     end
+    # binding.pry
   end
 
   def create
