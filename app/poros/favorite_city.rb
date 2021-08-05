@@ -16,7 +16,7 @@ class FavoriteCity
     @city_name = poro_info[:attributes][:city_name]
     @population = poro_info[:attributes][:population]
     @state = poro_info[:attributes][:state]
-    @summary = poro_info[:attributes][:summary].delete("<p></p><b><br/>\n")
+    @summary = poro_info[:attributes][:summary]
     @total_score = poro_info[:attributes][:total_score]
     @categories = eval(poro_info[:attributes][:categories_hash_array])
   end
