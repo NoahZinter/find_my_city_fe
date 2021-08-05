@@ -28,12 +28,14 @@
             Login
           </button>
         <% elsif !current_user[:id].nil? %>
+        <div style="display: flex">
           <button type="button" class="btn btn-info btn-round">
             <%= button_to 'Logout', logout_path, method: :delete, style: "border:none; background:none; color:white;" %>
           </button>
           <button type="button" class="btn btn-light btn-round">
             <%= link_to 'My Dashboard', dashboard_index_path %>
           </button>
+        </div>
         <% end %>
       </div>
         <!-- <h3>Your next chapter awaits</h3> -->
