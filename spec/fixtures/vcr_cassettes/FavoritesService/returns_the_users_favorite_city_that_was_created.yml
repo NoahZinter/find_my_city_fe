@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://helpmefindmycity-api.herokuapp.com/api/v1/favorites
+    body:
+      encoding: UTF-8
+      string: city_id=1&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 05 Aug 2021 02:36:59 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f371cabeb2a3caddacfff091913afb91"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d888844e-57b4-4983-86c6-629d50fa9386
+      X-Runtime:
+      - '0.111628'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"62","type":"favorite","attributes":{"user_id":1,"city_id":1,"city_name":"Chicago","population":null,"state":"Illinois","summary":"\u003cp\u003eChicago,
+        Illinois, is among the best cities with a \u003cb\u003evibrant startup scene\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003eventure
+        capital\u003c/b\u003e, \u003cb\u003ebusiness freedom\u003c/b\u003e and \u003cb\u003ehealthcare\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eChicago
+        is one of the top ten city matches for 5.5% of Teleport users.\u003c/p\u003e\n","total_score":62.91,"categories_hash_array":"[{:name=\u003e\"Housing\",
+        :score_out_of_10=\u003e3.7020000000000004}, {:name=\u003e\"Cost of Living\",
+        :score_out_of_10=\u003e4.766000000000001}, {:name=\u003e\"Startups\", :score_out_of_10=\u003e9.513},
+        {:name=\u003e\"Venture Capital\", :score_out_of_10=\u003e8.368}, {:name=\u003e\"Travel
+        Connectivity\", :score_out_of_10=\u003e5.5075}, {:name=\u003e\"Commute\",
+        :score_out_of_10=\u003e4.57975}, {:name=\u003e\"Business Freedom\", :score_out_of_10=\u003e8.671},
+        {:name=\u003e\"Safety\", :score_out_of_10=\u003e3.8320000000000003}, {:name=\u003e\"Healthcare\",
+        :score_out_of_10=\u003e8.555}, {:name=\u003e\"Education\", :score_out_of_10=\u003e7.999},
+        {:name=\u003e\"Environmental Quality\", :score_out_of_10=\u003e6.8045}, {:name=\u003e\"Economy\",
+        :score_out_of_10=\u003e6.5145}, {:name=\u003e\"Taxation\", :score_out_of_10=\u003e4.062},
+        {:name=\u003e\"Internet Access\", :score_out_of_10=\u003e6.599499999999999},
+        {:name=\u003e\"Leisure \u0026 Culture\", :score_out_of_10=\u003e8.193}, {:name=\u003e\"Tolerance\",
+        :score_out_of_10=\u003e6.1339999999999995}, {:name=\u003e\"Outdoors\", :score_out_of_10=\u003e5.4155}]"}}}'
+  recorded_at: Thu, 05 Aug 2021 02:36:59 GMT
+recorded_with: VCR 6.0.0
