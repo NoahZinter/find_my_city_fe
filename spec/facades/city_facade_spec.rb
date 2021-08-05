@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe CityFacade do
-  xit 'creates a searched-for city' do
+  it 'creates a searched-for city' do
     city = CityFacade.show_city('Chicago', 'IL')
 
     expect(city.categories).is_a? Array
