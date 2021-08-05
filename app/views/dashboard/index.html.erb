@@ -10,7 +10,7 @@
           <h5 class= "mb-3">There is nothing to display at this time. Search cities to add to your favorites!</h5>
             <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg" alt="" style="width: 100%; opacity: 50%">
 
-        
+
         <% else %>
           <h2><%= @favorites.first.city_name %></h2>
           <%= sanitize @favorites.first.summary %>

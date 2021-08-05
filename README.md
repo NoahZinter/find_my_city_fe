@@ -64,8 +64,12 @@ The following is a depiction of the Database Schema
 [OpenWeather](https://openweathermap.org/)
 [Teleport](https://developers.teleport.org/api/)
 ## API Endpoints
- - City Search `asdf`
- - User Favorite Save `asdf`
+ - User Create `POST /api/v1/users` Creates a user in the datebase
+ - City Search `GET /api/v1/city` Get a city by city name and state initials search
+ - User Favorite Save `POST /api/v1/favorites` Adds a city to a users favorites
+ - User Favorite List `GET /api/v1/users/:id/favorites` Gets the users favorites list
+ - Delete Favorite `DELETE /api/v1/favorites/:id` Deletes favorite from user favorites list
+ - Get Weather `GET /api/v1/weather` Returns the weather for the cities day
 
 ## Technologies Used
 - Ruby
