@@ -1,8 +1,10 @@
 FactoryBot.define do
   factory :city do
-    picture {Faker::LoremFlickr.image}
-    name {Faker::Address.city}
-    total_score {Faker::Number.within(range: 0.0..10.0) }
-    summary {Faker::Lorem.paragraph}
+    city { Faker::Address.city }
+    state { Faker::Address.state_abbr }
+    summary { Faker::Lorem.paragraph }
+    total_score { Faker::Number.between(from: 0.0, to: 100.0)}
+    categories_hash_array { Faker::Lorem.words(number: 4) }
+    population { Faker::Number.between(from: 100, to: 1000000)}
   end
 end

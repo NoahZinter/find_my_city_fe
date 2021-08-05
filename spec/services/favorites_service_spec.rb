@@ -34,17 +34,33 @@ RSpec.describe FavoritesService do
     user_id = 1
     data = FavoritesService.user_favorites_list(user_id)[:data]
 
-    expect(data.count).to eq(62)
+    expect(data.count).to eq(65)
     expect(data).to be_an(Array)
 
     expect(data.first).to have_key(:id)
-    expect(data.first[:id]).to eq("1")
+    expect(data.first[:id]).to eq("13")
     expect(data.first[:attributes]).to have_key(:city_name)
     expect(data.first[:attributes][:city_name]).to eq("Chicago")
 
     expect(data.last).to have_key(:id)
-    expect(data.last[:id]).to eq("62")
+    expect(data.last[:id]).to eq("79")
     expect(data.last[:attributes]).to have_key(:city_name)
     expect(data.last[:attributes][:city_name]).to eq("Chicago")
+  end
+
+  it 'can delete a city from users favorites' do
+    user_id = 1
+    data1 = FavoritesService.user_favorites_list(user_id)[:data]
+
+    first_favorite = data1.first
+
+    favorite_id = data1.first[:id]
+    response = FavoritesService.delete_favorite(favorite_id)
+
+    data2 = FavoritesService.user_favorites_list(user_id)[:data]
+    new_first_favorite = data2.first
+
+    expect(new_first_favorite).to_not eq(first_favorite)
+    expect(response.status).to eq(204)
   end
 end

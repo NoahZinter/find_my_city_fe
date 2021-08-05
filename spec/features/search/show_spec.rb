@@ -46,13 +46,28 @@ RSpec.describe 'City Search' do
     expect(page).to have_button 'Add to Favorites'
   end
 
-  xit 'can add a favorite' do
+  it 'can add a favorite' do
     visit root_path
+
+    click_on "Login"
+    fill_in('Email', with: 'testytester@gmail.com')
+    fill_in('Password', with: 'abcdefg')
+    click_on "Log in"
+
     fill_in('city', with: 'Los Angeles')
     select 'California', :from => 'state'
     click_button 'Search'
 
+    expect(current_path).to eq(search_path)
+    expect(page).to have_content('City Information')
+    expect(page).to have_content('Los Angeles, California')
+    expect(page).to have_content('Todays Forecast')
+    expect(page).to have_button('Add to Favorites')
+
     click_button 'Add to Favorites'
+
+    expect(current_path).to eq(dashboard_index_path)
+    expect(page).to have_content('Los Angeles')
   end
 
   it 'has city weather' do

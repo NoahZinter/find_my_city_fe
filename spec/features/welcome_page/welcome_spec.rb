@@ -16,7 +16,7 @@ RSpec.describe 'login' do
     expect(page).to have_content("Login using Google")
   end
 
-  xit 'test that you can login' do
+  it 'test that you can login and out' do
     visit root_path
 
     click_on "Login"
@@ -24,7 +24,10 @@ RSpec.describe 'login' do
     fill_in('Password', with: 'abcdefg')
     click_on "Log in"
 
-    expect(current_path).to eq('/dashboard')
+    expect(current_path).to eq(dashboard_index_path)
+    expect(page).to have_content('Welcome testytester@gmail.com')
+    expect(page).to_not have_content('Must fill out email & password fields')
+
     click_on "Logout"
 
     expect(current_path).to eq(root_path)

@@ -10,5 +10,9 @@ class FavoritesService
       response = Faraday.get("https://helpmefindmycity-api.herokuapp.com/api/v1/users/#{user_id}/favorites")
       JSON.parse(response.body, symbolize_names: true)
     end
+
+    def delete_favorite(favorite_id)
+      Faraday.delete("https://helpmefindmycity-api.herokuapp.com/api/v1/favorites/#{favorite_id}")
+    end
   end
 end
