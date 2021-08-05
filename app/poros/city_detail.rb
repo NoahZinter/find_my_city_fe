@@ -1,5 +1,6 @@
 class CityDetail
-  attr_reader :categories,
+  attr_reader :id,
+              :categories,
               :name,
               :picture,
               :state,
@@ -9,6 +10,7 @@ class CityDetail
 
   def initialize(response)
     if !response[:data][:attributes][:population].nil?
+      @id = response[:data][:id].to_i
       @population = response[:data][:attributes][:population]
       @name = response[:data][:attributes][:city]
       @state = response[:data][:attributes][:state]
@@ -16,6 +18,7 @@ class CityDetail
       @categories = nil
       @summary = nil
     else
+      @id = response[:data][:id].to_i
       @population = nil
       @categories = response[:data][:attributes][:categories_hash_array]
       @name = response[:data][:attributes][:city]

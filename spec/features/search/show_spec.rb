@@ -34,11 +34,26 @@ RSpec.describe 'City Search' do
     end
   end
 
-  it 'should search for multi-word cities'
+  it 'searches for multi-word cities' do
+    visit root_path
+    fill_in('city', with: 'Los Angeles')
+    select 'California', :from => 'state'
+    click_button 'Search'
 
-  it 'should not accept numbers in city field'
+    expect(page).to have_content 'Los Angeles'
+    expect(page).to have_content 'Los Angeles is one of the top ten city matches for 11.5% of Teleport users.'
+    expect(page).to have_content 'Overall Rating'
+    expect(page).to have_button 'Add to Favorites'
+  end
 
-  it 'should show a 404 for city not found'
+  xit 'can add a favorite' do
+    visit root_path
+    fill_in('city', with: 'Los Angeles')
+    select 'California', :from => 'state'
+    click_button 'Search'
+
+    click_button 'Add to Favorites'
+  end
 
   it 'has city weather' do
     visit root_path
