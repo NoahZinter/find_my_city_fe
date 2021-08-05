@@ -4,14 +4,14 @@
 <div class="row justify-content-between">
 
   <div class="col-7 mt-5">
-    <div class="mt-4 border border-primary p-4 mb-5 ml-5">
+    <div class="mt-4 border border-2 p-4 mb-5 ml-5">
       <span class="">
-        <% if @favorites.nil? %>
-          <h5 class= "mb-3">There is nothing to display at this time. Search cities to add to your favorites!</h5>
-            <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg" alt="" style="width: 100%; opacity: 50%">
 
 
-        <% else %>
+        <% if !@selected_city.nil? %>
+          <h2><%=  %></h2>
+
+        <% elsif %>
           <h2><%= @favorites.first.city_name %></h2>
           <%= sanitize @favorites.first.summary %>
           <div style="display: flex">
@@ -38,21 +38,30 @@
                 </div>
                 <br>
               <% end %>
+
             <% else %>
               <p style="margin-top: 30px">Sorry, we do not have any scores available for this city.</p>
               <p>Scores are usually only available for larger urban cities.</p>
             <% end %>
-        </div>
-      <% end %>
+          </div>
+
+        <% else @favorites.nil? %>
+          <h5 class= "mb-3">There is nothing to display at this time. Search cities to add to your favorites!</h5>
+            <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg" alt="" style="width: 100%; opacity: 50%">
+        <% end %>
+
+
       </span>
     </div>
   </div>
+
+
 
   <div class="col-4 mt-4 mr-5">
     <h2 class="mt-4">City Favorites</h2><hr>
     <% if !@favorites.nil? %>
 
-    <div >
+      <div >
         <% @favorites.each do |favorite| %>
           <ol style="margin: auto; padding: 0px;" class="mx-auto">
             <div class="card mx-auto" style="width: 18rem;">
@@ -60,7 +69,10 @@
               <!-- <img src="https://classroomclipart.com/images/gallery/Clipart/Environment/TN_pollution-free-electric-car-driving-on-city-street-clipart.jpg" class="card-img-top" alt="..."> -->
               <div class="card-body">
                 <p class="card-text"><%= sanitize favorite.summary %></p>
-                <%= button_to "Delete City", dashboard_path(favorite.id), method: :delete %>
+                <div style="display: flex" class="justify-content-around">
+                  <%= button_to "View City", dashboard_index_path(), method: :get, params:{selected_city: favorite}%>
+                  <%= button_to "Delete City", dashboard_index_path(favorite.id), method: :delete %>
+                </div>
               </div>
             </div>
           </ol>
