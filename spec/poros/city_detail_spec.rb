@@ -24,4 +24,16 @@ RSpec.describe CityDetail do
       expect(hash[:score_out_of_10]).is_a? Float
     end
   end
+
+  it 'has attributes for small towns with no scores' do
+    response = CityService.get_city('Pueblo', 'CO')
+    poro = CityDetail.new(response)
+
+    expect(poro.id).to be_a(Integer)
+    expect(poro.name).to eq("Pueblo, Colorado, United States")
+    expect(poro.population).to be_a(Integer)
+    expect(poro.categories).to be_nil
+    expect(poro.state).to eq("Colorado")
+    expect(poro.total_score).to be_nil
+  end
 end
