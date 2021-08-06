@@ -16,16 +16,32 @@ Find My City is a city finding app which allows users to search and sort cities 
 This is our attempt at solving this problem.
 ## Table of Contents
   - [Getting Started](#getting-started)
+  - [Screenshots](#screenshots)
   - [Running the tests](#running-the-tests)
   - [DB Schema](#db-schema)
-  - [API Services Used](#API-Services-Used)
+  - [API Services Used](#api-services-used)
   - [Endpoints](#endpoints)
   - [Technologies Used](#technologies-used)
   - [Versioning](#versioning)
-  - [Visit a Live Version of this Web App](#Visit-a-Live-Version-of-this-App-on-Heroku)
+  - [Visit a Live Version of this Web App](#visit-a-live-version-of-this-app-on-heroku)
   - [Authors](#authors)
+
 ## Getting Started
 To run the web application on your local machine, you can fork and clone down the repo and follow the installation instructions below.
+
+## Screenshots 
+- Welcome Page
+<img width="408" alt="Screen Shot 2021-08-05 at 6 05 56 PM" src="https://user-images.githubusercontent.com/73974901/128436965-496bf35f-8e7f-4fd6-a705-4d865c52d670.png">
+- Login Modal
+<img width="408" alt="Screen Shot 2021-08-05 at 6 06 10 PM" src="https://user-images.githubusercontent.com/73974901/128437038-69b3fd07-da43-4685-b6a0-c723c9fa4e99.png">
+- City Show Page
+<img width="408" alt="Screen Shot 2021-08-05 at 6 06 46 PM" src="https://user-images.githubusercontent.com/73974901/128437066-979fca46-808f-493d-a735-9425e72781d8.png">
+- Weather Info For City
+<img width="408" alt="Screen Shot 2021-08-05 at 6 18 22 PM" src="https://user-images.githubusercontent.com/73974901/128437293-106f6a1b-aa8f-4bc3-973b-283d1c74745b.png">
+- Users Dashboard/Comparison Page
+<img width="408" alt="Screen Shot 2021-08-05 at 6 12 40 PM" src="https://user-images.githubusercontent.com/73974901/128437114-4d95bb5d-96b0-4c79-a688-af3ed6c4a835.png">
+
+
 ### Installing
 First you'll need to:
 `bundle install` 
@@ -60,10 +76,12 @@ RSpec testing suite is utilized for testing this application.
 ## DB Schema
 The following is a depiction of the Database Schema
 ![Find My City Schema](https://i.ibb.co/FVxtwj0/Screen-Shot-2021-08-04-at-2-48-34-PM.png)
+
 ## API Services Used
-[OpenWeather](https://openweathermap.org/)
+[OpenWeather](https://openweathermap.org/) |
 [Teleport](https://developers.teleport.org/api/)
-## API Endpoints
+
+## Endpoints
  - User Create `POST /api/v1/users` Creates a user in the datebase
  - City Search `GET /api/v1/city` Get a city by city name and state initials search
  - User Favorite Save `POST /api/v1/favorites` Adds a city to a users favorites
@@ -79,6 +97,7 @@ The following is a depiction of the Database Schema
 - HTML
 - CSS
 - Bootstrap
+
 ## Gems Used
 - factory_bot_rails
 - faker
@@ -88,27 +107,30 @@ The following is a depiction of the Database Schema
 - shoulda-matchers
 - figaro
 - capybara
+
 ## Versioning
 - Ruby 2.7.2
 - Rails 5.2.6
+
 ## Visit a Live Version of this App on Heroku
 [https://helpmefindmycity.herokuapp.com](https://helpmefindmycity.herokuapp.com)
+
 ## Authors
 - **Regina Casias**
-  [LinkedIn](https://www.linkedin.com/in/regina-casias-0a6b78196/)
+  [LinkedIn](https://www.linkedin.com/in/regina-casias-0a6b78196/) |
   [GitHub](https://github.com/rcasias)
 - **Kon Ham**
-  [LinkedIn](https://www.linkedin.com/in/kon-ham)
+  [LinkedIn](https://www.linkedin.com/in/kon-ham) |
   [GitHub](https://github.com/ignored-comment)
 - **Alicia Henzler**
-  [LinkedIn](https://www.linkedin.com/in/alicia-henzler-265024209/)
+  [LinkedIn](https://www.linkedin.com/in/alicia-henzler-265024209/) |
   [GitHub](https://github.com/ahenzler)
 - **Joe Peterson**
-  [LinkedIn](https://www.linkedin.com/in/joe-peterson-14718220b/)
+  [LinkedIn](https://www.linkedin.com/in/joe-peterson-14718220b/) |
   [GitHub](https://github.com/JoePeterson51)
 - **Joe Ray**
-  [LinkedIn](https://www.linkedin.com/in/joe-ray-a46140192/)
+  [LinkedIn](https://www.linkedin.com/in/joe-ray-a46140192/) |
   [GitHub](https://github.com/joeray100)
 - **Noah Zinter**
-  [LinkedIn](https://www.linkedin.com/in/noahzinter) 
+  [LinkedIn](https://www.linkedin.com/in/noahzinter) |
   [GitHub](https://github.com/NoahZinter)
